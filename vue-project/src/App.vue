@@ -4,7 +4,7 @@ import { reactive, ref, onMounted, computed } from 'vue';
 // ⚙️ URL base del backend (Vite): define VITE_API_URL en el .env del frontend.
 // Si no existe, usa http://localhost:3000 por defecto.
 const BASE_URL: string =
-  (import.meta.env.VITE_API_URL as string | undefined) ?? 'https://zero2-backend-fdsq.onrender.com/usuario';
+  (import.meta.env.VITE_API_URL as string | undefined) ?? 'https://zero2-backend-fdsq.onrender.com';
 
 // Tipos que usa tu UI
 type Msg = { type: 'ok' | 'error'; text: string };
